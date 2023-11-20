@@ -1,13 +1,12 @@
 import 'package:edu_care/controllers/authentication_controller.dart';
-import 'package:edu_care/controllers/dashboard_controller.dart';
+import 'package:edu_care/controllers/course_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class DashboardPage extends StatelessWidget {
   final AuthenticationController authenticationController =
       Get.put(AuthenticationController());
-  final DashboardController dashboardController =
-      Get.put(DashboardController());
+  final CourseController courseController = Get.put(CourseController());
 
   DashboardPage({super.key});
 
@@ -42,7 +41,7 @@ class DashboardPage extends StatelessWidget {
           ],
         ),
       ),
-      body: const Padding(
+      body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -56,7 +55,108 @@ class DashboardPage extends StatelessWidget {
                 color: const Color.fromRGBO(107, 30, 101, 1),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 20),
+            Obx(
+              () {
+                final enrolledCourses = courseController.enrolledCourses;
+                if (enrolledCourses.isEmpty) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+
+                return Column(
+                  children: [
+                    SizedBox(
+                      height: 250,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: enrolledCourses.length,
+                        itemBuilder: (context, index) {
+                          final course = enrolledCourses[index];
+
+                          return Container(
+                            width: 270,
+                            height: 240,
+                            margin: const EdgeInsets.only(right: 13),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.3),
+                                  blurRadius: 5,
+                                  offset: const Offset(0, 1),
+                                ),
+                              ],
+                              color: const Color.fromRGBO(107, 30, 101, 1),
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 15.0,
+                                    vertical: 5.0,
+                                  ),
+                                  height: 30,
+                                  width: double.infinity,
+                                  child: Text(
+                                    '${course.fullName}',
+                                    style: const TextStyle(
+                                      color: Color.fromRGBO(171, 171, 171, 1),
+                                      fontWeight: FontWeight.bold,
+                                      overflow: TextOverflow.ellipsis,
+                                      fontSize: 15.0,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(10),
+                                        child: Image.network(
+                                          '${course.thumbnail}',
+                                          fit: BoxFit.fill,
+                                          height: 210,
+                                          width: double.infinity,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        bottom: 0,
+                                        left: 0,
+                                        right: 0,
+                                        child: ElevatedButton(
+                                          onPressed: () {},
+                                          style: ButtonStyle(
+                                            foregroundColor:
+                                                MaterialStateProperty.all(
+                                                    Colors.white),
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                              const Color.fromRGBO(
+                                                  107, 30, 101, 1),
+                                            ),
+                                            shape: MaterialStateProperty.all(
+                                              RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(10.0),
+                                              ),
+                                            ),
+                                          ),
+                                          child: const Text('Continue Course'),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
           ],
         ),
       ),
