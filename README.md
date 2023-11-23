@@ -16,8 +16,8 @@ EduCare uses Firebase for authentication.
 EduCare uses the following third-party services:
 
 - [Firebase](https://firebase.google.com/): For authentication, cloud storage, and real-time database.
-- [Get](https://pub.dev/packages/get): State management library.
-- [Chewie](https://pub.dev/packages/chewie): Video player for Flutter.
+- [Get](https://pub.dev/packages/get): Used as the state management library.
+- [Chewie](https://pub.dev/packages/chewie): For Video player support.
 - [Video Player](https://pub.dev/packages/video_player): Video player plugin.
-- [Get Storage](https://pub.dev/packages/get_storage): Local storage for Flutter.
-- [intl](https://pub.dev/packages/intl): Internationalization and localization support.
+- [Get Storage](https://pub.dev/packages/get_storage): For local storage support.
+- [intl](https://pub.dev/packages/intl): Used for parsing timestamps.
