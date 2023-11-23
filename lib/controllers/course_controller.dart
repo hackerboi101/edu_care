@@ -34,6 +34,8 @@ class CourseController extends GetxController {
 
   Future<void> fetchSpecificCourse(String courseName) async {
     try {
+      course.value = null;
+
       QuerySnapshot<Map<String, dynamic>> querySnapshot =
           await FirebaseFirestore.instance
               .collection('Enrolled Courses')

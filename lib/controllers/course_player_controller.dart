@@ -182,10 +182,12 @@ class CoursePlayerController extends GetxController {
   }
 
   @override
-  void onClose() {
-    videoPlayerController.pause();
-    videoPlayerController.dispose();
+  Future<void> onClose() async {
+    await videoPlayerController.pause();
+    await videoPlayerController.dispose();
+    await chewieController.pause();
     chewieController.dispose();
+    courseController.course.value = null;
     super.onClose();
   }
 }
