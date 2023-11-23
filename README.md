@@ -1,4 +1,4 @@
-# EduCare Flutter Project
+# EduCare
 
 EduCare is a simple Edtech application built with Flutter that helps you to learn new skills and achieve your goals. It includes authentication functionality, a user-friendly dashboard displaying enrolled courses, a feature-rich course player for video playback, and bookmarking functionality.
 
