@@ -19,8 +19,12 @@ class CoursePlayerPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(27, 35, 48, 1),
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        iconTheme: const IconThemeData(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Get.delete<CoursePlayerController>();
+            Get.back();
+          },
           color: const Color.fromRGBO(107, 30, 101, 1),
         ),
         title: Column(

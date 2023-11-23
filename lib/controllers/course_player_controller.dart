@@ -85,25 +85,36 @@ class CoursePlayerController extends GetxController {
   }
 
   Future<void> goToPreviousModule() async {
-    final currentTimestampValue = videoPlayerController.value.position;
     final List<CourseModule> modules = courseModuleController.courseModules;
-    final previousModule = modules.lastWhere(
-      (module) =>
-          parseDuration(module.startTimeFormatted) < currentTimestampValue,
-      orElse: () => modules.first,
-    );
-    await seekToModule(previousModule);
+    final Duration currentPosition = videoPlayerController.value.position;
+
+    for (int i = modules.length - 1; i >= 0; i--) {
+      final CourseModule currentModule = modules[i];
+      final CourseModule previousModule = modules[i - 1];
+      final Duration moduleStartTime =
+          parseDuration(currentModule.startTimeFormatted);
+
+      if (currentPosition > moduleStartTime) {
+        await seekToModule(previousModule);
+        break;
+      }
+    }
   }
 
   Future<void> goToNextModule() async {
-    final currentTimestampValue = videoPlayerController.value.position;
     final List<CourseModule> modules = courseModuleController.courseModules;
-    final nextModule = modules.firstWhere(
-      (module) =>
-          parseDuration(module.startTimeFormatted) > currentTimestampValue,
-      orElse: () => modules.last,
-    );
-    await seekToModule(nextModule);
+    final Duration currentPosition = videoPlayerController.value.position;
+
+    for (int i = 0; i < modules.length; i++) {
+      final CourseModule currentModule = modules[i];
+      final Duration moduleStartTime =
+          parseDuration(currentModule.startTimeFormatted);
+
+      if (currentPosition < moduleStartTime) {
+        await seekToModule(currentModule);
+        break;
+      }
+    }
   }
 
   Future<void> seekToModule(CourseModule module) async {
@@ -182,12 +193,26 @@ class CoursePlayerController extends GetxController {
   }
 
   @override
-  Future<void> onClose() async {
-    await videoPlayerController.pause();
-    await videoPlayerController.dispose();
-    await chewieController.pause();
+  void onClose() {
+    print('On close method called');
+    videoPlayerController.pause();
+    videoPlayerController.dispose();
+    chewieController.pause();
     chewieController.dispose();
-    courseController.course.value = null;
+    chewieController.videoPlayerController.pause();
+    chewieController.videoPlayerController.dispose();
     super.onClose();
+  }
+
+  @override
+  void dispose() {
+    print('Dispose method called');
+    videoPlayerController.pause();
+    videoPlayerController.dispose();
+    chewieController.pause();
+    chewieController.dispose();
+    chewieController.videoPlayerController.pause();
+    chewieController.videoPlayerController.dispose();
+    super.dispose();
   }
 }
