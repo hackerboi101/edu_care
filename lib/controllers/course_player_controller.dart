@@ -5,6 +5,7 @@ import 'package:edu_care/models/course_model.dart';
 import 'package:edu_care/models/course_module_model.dart';
 import 'package:edu_care/views/dashboard_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:video_player/video_player.dart';
 import 'package:get/get.dart';
 
@@ -35,6 +36,12 @@ class CoursePlayerController extends GetxController {
     final Course? currentCourse = courseController.course.value!;
 
     if (currentCourse != null) {
+      final courseFullName = currentCourse.fullName.toString();
+      final bookmarkedTimeSeconds = GetStorage().read<int>(courseFullName) ?? 0;
+
+      print('Course Full Name: $courseFullName');
+      print('Bookmarked Time Seconds: $bookmarkedTimeSeconds');
+
       videoPlayerController = VideoPlayerController.networkUrl(
         Uri.parse(currentCourse.video),
       );
@@ -56,8 +63,13 @@ class CoursePlayerController extends GetxController {
         autoInitialize: true,
       );
 
-      await chewieController.videoPlayerController.initialize().then((_) {
-        chewieController.seekTo(const Duration(seconds: 0));
+      await chewieController.videoPlayerController.initialize().then((_) async {
+        if (bookmarkedTimeSeconds > 0) {
+          chewieController.seekTo(Duration(seconds: bookmarkedTimeSeconds));
+        } else {
+          chewieController.seekTo(const Duration(seconds: 0));
+        }
+        await readBookmarkTime();
         update();
       }).catchError((error) {
         print('Error initializing video player: $error');
@@ -134,6 +146,39 @@ class CoursePlayerController extends GetxController {
         ),
       ],
     );
+  }
+
+  Future<void> bookmarkCurrentTime() async {
+    final currentTimestampValue = videoPlayerController.value.position;
+    final Course? currentCourse = courseController.course.value!;
+
+    if (currentCourse != null) {
+      final courseFullName = currentCourse.fullName.toString();
+      await GetStorage().write(
+        courseFullName,
+        currentTimestampValue.inSeconds.round(),
+      );
+
+      Get.snackbar(
+        'Bookmark Saved',
+        'Current time bookmarked successfully!',
+        snackPosition: SnackPosition.BOTTOM,
+      );
+
+      debugPrint('Bookmarked time: $currentTimestampValue');
+    }
+  }
+
+  Future<void> readBookmarkTime() async {
+    final Course? currentCourse = courseController.course.value!;
+    if (currentCourse != null) {
+      final courseFullName = currentCourse.fullName.toString();
+      final bookmarkedTimeSeconds = GetStorage().read<int>(courseFullName) ?? 0;
+      if (bookmarkedTimeSeconds > 0) {
+        chewieController.seekTo(Duration(seconds: bookmarkedTimeSeconds));
+        update();
+      }
+    }
   }
 
   @override

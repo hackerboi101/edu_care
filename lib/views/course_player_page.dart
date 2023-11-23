@@ -102,6 +102,24 @@ class CoursePlayerPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () async {
+                    await coursePlayerController.bookmarkCurrentTime();
+                  },
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 213, 213, 213)),
+                    backgroundColor: MaterialStateProperty.all(
+                      const Color.fromRGBO(107, 30, 101, 1),
+                    ),
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                  child: Text('Bookmark Time'),
+                ),
+                ElevatedButton(
+                  onPressed: () async {
                     await coursePlayerController.goToNextModule();
                   },
                   style: ButtonStyle(
