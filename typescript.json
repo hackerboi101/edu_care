@@ -1,0 +1,214 @@
+{
+  "CourseModules": [
+    {
+      "courseName": "TypeScript Course for Beginners",
+      "modules": [
+        {
+          "moduleName": "Getting Started",
+          "startTime": "00:00",
+          "endTime": "01:57"
+        },
+        {
+          "moduleName": "What is TypeScript",
+          "startTime": "01:57",
+          "endTime": "06:31"
+        },
+        {
+          "moduleName": "Installing & Using TypeScript",
+          "startTime": "06:31",
+          "endTime": "19:53"
+        },
+        {
+          "moduleName": "The Advantages of TypeScript",
+          "startTime": "19:53",
+          "endTime": "22:59"
+        },
+        {
+          "moduleName": "Course Outline",
+          "startTime": "22:59",
+          "endTime": "27:16"
+        },
+        {
+          "moduleName": "How to Get the Most out of This Course",
+          "startTime": "27:16",
+          "endTime": "30:29"
+        },
+        {
+          "moduleName": "Setting Up our Development Environment",
+          "startTime": "30:29",
+          "endTime": "33:36"
+        },
+        {
+          "moduleName": "The Course Project Setup",
+          "startTime": "33:36",
+          "endTime": "40:56"
+        },
+        {
+          "moduleName": "Module Introduction",
+          "startTime": "40:56",
+          "endTime": "41:23"
+        },
+        {
+          "moduleName": "Using Types",
+          "startTime": "41:23",
+          "endTime": "51:43"
+        },
+        {
+          "moduleName": "TypeScript Types vs JavaScript Types",
+          "startTime": "51:43",
+          "endTime": "56:37"
+        },
+        {
+          "moduleName": "Numbers, Strings and Booleans",
+          "startTime": "56:37",
+          "endTime": "01:02:20"
+        },
+        {
+          "moduleName": "Type Assignment and Type Inference",
+          "startTime": "01:02:20",
+          "endTime": "01:07:59"
+        },
+        {
+          "moduleName": "Object Types",
+          "startTime": "01:07:59",
+          "endTime": "01:15:31"
+        },
+        {
+          "moduleName": "Array Types",
+          "startTime": "01:15:31",
+          "endTime": "01:21:01"
+        },
+        {
+          "moduleName": "Tuples",
+          "startTime": "01:21:01",
+          "endTime": "01:27:21"
+        },
+        {
+          "moduleName": "Enums",
+          "startTime": "01:27:21",
+          "endTime": "01:34:26"
+        },
+        {
+          "moduleName": "The Any Type",
+          "startTime": "01:34:26",
+          "endTime": "01:36:30"
+        },
+        {
+          "moduleName": "Union Types",
+          "startTime": "01:36:30",
+          "endTime": "01:43:01"
+        },
+        {
+          "moduleName": "Literal Types",
+          "startTime": "01:43:01",
+          "endTime": "01:50:55"
+        },
+        {
+          "moduleName": "Type Aliases",
+          "startTime": "01:50:55",
+          "endTime": "01:53:55"
+        },
+        {
+          "moduleName": "Function Return Types and Void",
+          "startTime": "01:53:55",
+          "endTime": "02:01:21"
+        },
+        {
+          "moduleName": "Function Types",
+          "startTime": "02:01:21",
+          "endTime": "02:06:55"
+        },
+        {
+          "moduleName": "Function Types and Callbacks",
+          "startTime": "02:06:55",
+          "endTime": "02:11:18"
+        },
+        {
+          "moduleName": "The Unknown Type",
+          "startTime": "02:11:18",
+          "endTime": "02:15:02"
+        },
+        {
+          "moduleName": "The Never Type",
+          "startTime": "02:15:02",
+          "endTime": "02:19:12"
+        },
+        {
+          "moduleName": "Wrap Up",
+          "startTime": "02:19:12",
+          "endTime": "02:21:04"
+        },
+        {
+          "moduleName": "Module Introduction",
+          "startTime": "02:21:04",
+          "endTime": "02:21:50"
+        },
+        {
+          "moduleName": "Watch Node",
+          "startTime": "02:21:50",
+          "endTime": "02:23:55"
+        },
+        {
+          "moduleName": "Compiling the Entire Project",
+          "startTime": "02:23:55",
+          "endTime": "02:27:42"
+        },
+        {
+          "moduleName": "Include and Exclude Files",
+          "startTime": "02:27:42",
+          "endTime": "02:33:55"
+        },
+        {
+          "moduleName": "Setting a Compilation Target",
+          "startTime": "02:33:55",
+          "endTime": "02:37:59"
+        },
+        {
+          "moduleName": "Understanding TypeScript Libs",
+          "startTime": "02:37:59",
+          "endTime": "02:43:31"
+        },
+        {
+          "moduleName": "More Options",
+          "startTime": "02:43:31",
+          "endTime": "02:45:12"
+        },
+        {
+          "moduleName": "Source Maps",
+          "startTime": "02:45:12",
+          "endTime": "02:47:12"
+        },
+        {
+          "moduleName": "Rootdir and Outdir",
+          "startTime": "02:47:12",
+          "endTime": "02:52:43"
+        },
+        {
+          "moduleName": "noemit on Error",
+          "startTime": "02:52:43",
+          "endTime": "02:55:35"
+        },
+        {
+          "moduleName": "Strict Compilation Options",
+          "startTime": "02:55:35",
+          "endTime": "03:06:39"
+        },
+        {
+          "moduleName": "Code Quality Options",
+          "startTime": "03:06:39",
+          "endTime": "03:11:02"
+        },
+        {
+          "moduleName": "Debugging with Visual Studio Code",
+          "startTime": "03:11:02",
+          "endTime": "03:15:22"
+        },
+        {
+          "moduleName": "Wrap Up",
+          "startTime": "03:15:22",
+          "endTime": "03:15:22"
+        }
+      ]
+    }
+  ]
+}

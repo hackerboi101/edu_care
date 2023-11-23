@@ -1,0 +1,249 @@
+{
+  "CourseModules": [
+    {
+      "courseName": "Flutter Crash Course for Beginners",
+      "modules": [
+        {
+          "moduleName": "What is Flutter",
+          "startTime": "00:00",
+          "endTime": "05:54"
+        },
+        {
+          "moduleName": "Flutter's Architecture",
+          "startTime": "05:54",
+          "endTime": "10:40"
+        },
+        {
+          "moduleName": "How Flutter & Dart Code Gets Compiled To Native Apps",
+          "startTime": "10:40",
+          "endTime": "13:54"
+        },
+        {
+          "moduleName": "Understanding Flutter Versions",
+          "startTime": "13:54",
+          "endTime": "16:44"
+        },
+        {
+          "moduleName": "Flutter macOS Setup",
+          "startTime": "16:44",
+          "endTime": "35:34"
+        },
+        {
+          "moduleName": "macOS Development Environment",
+          "startTime": "35:34",
+          "endTime": "39:42"
+        },
+        {
+          "moduleName": "Flutter Windows Setup",
+          "startTime": "39:42",
+          "endTime": "58:58"
+        },
+        {
+          "moduleName": "Windows Development Environment",
+          "startTime": "58:58",
+          "endTime": "01:02:44"
+        },
+        {
+          "moduleName": "Flutter & Material Design",
+          "startTime": "01:02:44",
+          "endTime": "01:04:00"
+        },
+        {
+          "moduleName": "Flutter Alternatives",
+          "startTime": "01:04:00",
+          "endTime": "01:10:06"
+        },
+        {
+          "moduleName": "Course Outline",
+          "startTime": "01:10:06",
+          "endTime": "01:16:46"
+        },
+        {
+          "moduleName": "How To Get The Most Out Of The Course",
+          "startTime": "01:16:46",
+          "endTime": "01:19:27"
+        },
+        {
+          "moduleName": "Module Introduction",
+          "startTime": "01:19:27",
+          "endTime": "01:21:52"
+        },
+        {
+          "moduleName": "Creating a New Project",
+          "startTime": "01:21:52",
+          "endTime": "01:34:07"
+        },
+        {
+          "moduleName": "An Overview of the Generated Files & Folders",
+          "startTime": "01:34:07",
+          "endTime": "01:42:28"
+        },
+        {
+          "moduleName": "Analyzing the Default App",
+          "startTime": "01:42:28",
+          "endTime": "01:48:00"
+        },
+        {
+          "moduleName": "Dart Basics",
+          "startTime": "01:48:00",
+          "endTime": "02:05:18"
+        },
+        {
+          "moduleName": "More Dart Basics",
+          "startTime": "02:05:18",
+          "endTime": "02:18:25"
+        },
+        {
+          "moduleName": "Building an App From Scratch",
+          "startTime": "02:18:25",
+          "endTime": "02:29:28"
+        },
+        {
+          "moduleName": "Running the App on an Emulator",
+          "startTime": "02:29:28",
+          "endTime": "02:32:53"
+        },
+        {
+          "moduleName": "Class Constructors & Named Arguments",
+          "startTime": "02:32:53",
+          "endTime": "02:41:23"
+        },
+        {
+          "moduleName": "First Summary & Additional Syntax",
+          "startTime": "02:41:23",
+          "endTime": "02:49:34"
+        },
+        {
+          "moduleName": "Building a Widget Tree",
+          "startTime": "02:49:34",
+          "endTime": "02:57:14"
+        },
+        {
+          "moduleName": "Visible (Input / Output) & Invisible (Layout / Control) Widgets",
+          "startTime": "02:57:14",
+          "endTime": "03:00:27"
+        },
+        {
+          "moduleName": "Adding Layout Widgets",
+          "startTime": "03:00:27",
+          "endTime": "03:07:19"
+        },
+        {
+          "moduleName": "Connecting Functions & Buttons",
+          "startTime": "03:07:19",
+          "endTime": "03:14:50"
+        },
+        {
+          "moduleName": "Anonymous Functions",
+          "startTime": "03:14:50",
+          "endTime": "03:18:11"
+        },
+        {
+          "moduleName": "Updating Widget Data (Or: Using StatelessWidget Incorrectly)",
+          "startTime": "03:18:11",
+          "endTime": "03:24:48"
+        },
+        {
+          "moduleName": "Updating Correctly with Stateful Widgets",
+          "startTime": "03:24:48",
+          "endTime": "03:36:46"
+        },
+        {
+          "moduleName": "A Brief Look Under The Hood",
+          "startTime": "03:36:46",
+          "endTime": "03:39:14"
+        },
+        {
+          "moduleName": "Using Private Properties",
+          "startTime": "03:39:14",
+          "endTime": "03:44:31"
+        },
+        {
+          "moduleName": "Creating a New, Custom Widget",
+          "startTime": "03:44:31",
+          "endTime": "03:56:21"
+        },
+        {
+          "moduleName": "First Styling & Layouting Steps",
+          "startTime": "03:56:21",
+          "endTime": "04:04:22"
+        },
+        {
+          "moduleName": "Enums & Multiple Constructors",
+          "startTime": "04:04:22",
+          "endTime": "04:08:29"
+        },
+        {
+          "moduleName": "Official Docs & The Widget Catalog",
+          "startTime": "04:08:29",
+          "endTime": "04:11:09"
+        },
+        {
+          "moduleName": "Passing Callback Functions Around",
+          "startTime": "04:11:09",
+          "endTime": "04:21:47"
+        },
+        {
+          "moduleName": "Introducing Maps",
+          "startTime": "04:21:47",
+          "endTime": "04:27:40"
+        },
+        {
+          "moduleName": "Mapping Lists to Widgets",
+          "startTime": "04:27:40",
+          "endTime": "04:38:04"
+        },
+        {
+          "moduleName": "final vs const",
+          "startTime": "04:38:04",
+          "endTime": "04:48:55"
+        },
+        {
+          "moduleName": "Introducing \"if\" Statements",
+          "startTime": "04:48:55",
+          "endTime": "04:55:46"
+        },
+        {
+          "moduleName": "[DART DEEP DIVE] More on \"if\" Statements",
+          "startTime": "04:55:46",
+          "endTime": "05:07:02"
+        },
+        {
+          "moduleName": "[DART DEEP DIVE] The \"null\" Value",
+          "startTime": "05:07:02",
+          "endTime": "05:09:05"
+        },
+        {
+          "moduleName": "Outputting Widgets Conditionally",
+          "startTime": "05:09:05",
+          "endTime": "05:11:26"
+        },
+        {
+          "moduleName": "Splitting the App Into Widgets",
+          "startTime": "05:11:26",
+          "endTime": "05:21:23"
+        },
+        {
+          "moduleName": "Calculating a Total Score",
+          "startTime": "05:21:23",
+          "endTime": "05:29:09"
+        },
+        {
+          "moduleName": "Getters & \"else-if\"",
+          "startTime": "05:29:09",
+          "endTime": "05:35:44"
+        },
+        {
+          "moduleName": "Resetting the Quiz",
+          "startTime": "05:35:44",
+          "endTime": "05:40:38"
+        },
+        {
+          "moduleName": "Wrap Up",
+          "startTime": "05:40:38",
+          "endTime": "05:40:38"
+        }
+      ]
+    }
+  ]
+}

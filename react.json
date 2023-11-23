@@ -1,0 +1,179 @@
+{
+  "CourseModules": [
+    {
+      "courseName": "React Crash Course for Beginners",
+      "modules": [
+        {
+          "moduleName": "Introduction",
+          "startTime": "00:00",
+          "endTime": "00:27"
+        },
+        {
+          "moduleName": "What is React",
+          "startTime": "00:27",
+          "endTime": "04:15"
+        },
+        {
+          "moduleName": "First React Code",
+          "startTime": "04:15",
+          "endTime": "11:40"
+        },
+        {
+          "moduleName": "Building SPAs",
+          "startTime": "11:40",
+          "endTime": "13:41"
+        },
+        {
+          "moduleName": "React Alternatives",
+          "startTime": "13:41",
+          "endTime": "16:48"
+        },
+        {
+          "moduleName": "Creating a React Project",
+          "startTime": "16:48",
+          "endTime": "25:03"
+        },
+        {
+          "moduleName": "Setting Up a Code Editor",
+          "startTime": "25:03",
+          "endTime": "28:07"
+        },
+        {
+          "moduleName": "Diving Into the Created Project",
+          "startTime": "28:07",
+          "endTime": "34:38"
+        },
+        {
+          "moduleName": "How React Works & Understanding Components",
+          "startTime": "34:38",
+          "endTime": "42:15"
+        },
+        {
+          "moduleName": "More About Components & Styling with CSS Classes",
+          "startTime": "42:15",
+          "endTime": "47:50"
+        },
+        {
+          "moduleName": "Building & Reusing Another Component",
+          "startTime": "47:50",
+          "endTime": "55:09"
+        },
+        {
+          "moduleName": "Pros & Dynamic Content",
+          "startTime": "55:09",
+          "endTime": "1:00:27"
+        },
+        {
+          "moduleName": "Handling Events",
+          "startTime": "1:00:27",
+          "endTime": "1:07:07"
+        },
+        {
+          "moduleName": "Adding More Components",
+          "startTime": "1:07:07",
+          "endTime": "1:12:48"
+        },
+        {
+          "moduleName": "Introducing State",
+          "startTime": "1:12:48",
+          "endTime": "1:21:07"
+        },
+        {
+          "moduleName": "Event Props",
+          "startTime": "1:21:07",
+          "endTime": "1:28:15"
+        },
+        {
+          "moduleName": "Adding Routing",
+          "startTime": "1:28:15",
+          "endTime": "1:45:07"
+        },
+        {
+          "moduleName": "Adding Links & Navigation",
+          "startTime": "1:45:07",
+          "endTime": "1:50:28"
+        },
+        {
+          "moduleName": "CSS Modules",
+          "startTime": "1:50:28",
+          "endTime": "1:56:14"
+        },
+        {
+          "moduleName": "Outputting Lists",
+          "startTime": "1:56:14",
+          "endTime": "2:02:04"
+        },
+        {
+          "moduleName": "Adding More Components",
+          "startTime": "2:02:04",
+          "endTime": "2:11:52"
+        },
+        {
+          "moduleName": "Props Children",
+          "startTime": "2:11:52",
+          "endTime": "2:20:31"
+        },
+        {
+          "moduleName": "Adding a Form",
+          "startTime": "2:20:31",
+          "endTime": "2:29:30"
+        },
+        {
+          "moduleName": "Getting User Input & Handling Form Submission",
+          "startTime": "2:29:30",
+          "endTime": "2:39:15"
+        },
+        {
+          "moduleName": "Preparing the App for HTTP",
+          "startTime": "2:39:15",
+          "endTime": "2:46:07"
+        },
+        {
+          "moduleName": "Sending a Post Request",
+          "startTime": "2:46:07",
+          "endTime": "2:51:25"
+        },
+        {
+          "moduleName": "Navigating Programmatically",
+          "startTime": "2:51:25",
+          "endTime": "2:55:07"
+        },
+        {
+          "moduleName": "Getting Started with Fetching Data",
+          "startTime": "2:55:07",
+          "endTime": "3:04:32"
+        },
+        {
+          "moduleName": "useEffect",
+          "startTime": "3:04:32",
+          "endTime": "3:14:40"
+        },
+        {
+          "moduleName": "Introducing React Context",
+          "startTime": "3:14:40",
+          "endTime": "3:25:43"
+        },
+        {
+          "moduleName": "Context Logic & Different Ways of Updating State",
+          "startTime": "3:25:43",
+          "endTime": "3:31:37"
+        },
+        {
+          "moduleName": "Using Context in Components",
+          "startTime": "3:31:37",
+          "endTime": "3:43:48"
+        },
+        {
+          "moduleName": "More Context Usage",
+          "startTime": "3:43:48",
+          "endTime": "3:50:42"
+        },
+        {
+          "moduleName": "Summary",
+          "startTime": "3:50:42",
+          "endTime": "3:50:42"
+        }
+      ]
+    }
+  ]
+}
