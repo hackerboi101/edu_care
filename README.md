@@ -9,7 +9,7 @@ EduCare uses Firebase for authentication.
 1. Open the app and you should see the homepage.
 2. Locate the "LET'S GO" button at the bottom of the page and tap on it.
 3. You should land on the Sign In page. If you have an account then put your details and click on Sign In.
-4. If you don't have a account, then navigate to the Sign Up page from the bottom of the screen. Put your details and Sign Up.
+4. If you don't have an account, then navigate to the Sign Up page from the bottom of the screen. Put your details and Sign Up.
 
 ## Third-Party Services
 
